@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next BLoC
 
-## Getting Started
+Boilerplate repo for initial project setup with Next.js, ARIA Components, Tailwind and BLoC state management.
 
-First, run the development server:
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), and flavored with some other technologies.
+
+## Overview
+
+Tech stack:
+
+- Next.js for SSR
+- Adobe Aria React component for accessibility compliance
+- BLoC as state management
+- Tailwind and Postcss for fast styling
+- Material Desin Icons (MDI) for iconography
+
+### Why BLoC?
+
+BLoC stands for Bussines Logic Component and is a common approach used in Flutter for app state management.
+While most of the time Redux is used with React, BLoC offers a more OOP style rather than the functional approach taken by Redux, so it might be more comfortable if you have some background in C# or Java.
+It uses **RxJs** to build a Pub-Sub model. You will have to model your state, publish it as an observable, and all the components that you need them to consume your state, will subscribe to that instance.
+
+## Running
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load custom Google Fonts.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js, take a look at the following resource: [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can have a look to BLoC Arhitecture: [On this Documentation Page](https://bloclibrary.dev/#/architecture)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+For ARIA-ready components, the API is pretty straightforward and: [documented here](https://react-spectrum.adobe.com/react-aria/why.html)
 
-## Deploy on Vercel
+Tailwind docs: [pages are here](https://tailwindcss.com/docs/utility-first)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Material Design Icons are the most complete and you can search them on: [The official page](https://pictogrammers.com/library/mdi/)
