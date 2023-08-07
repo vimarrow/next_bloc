@@ -23,23 +23,25 @@ export function AriaTextInput(props: AriaTextInputProps) {
   } = useTextField(props, ref);
 
   return (
-    <div>
-      <label {...labelProps}>
+    <div className="w-full my-2 flex flex-col gap-1.5">
+      <label {...labelProps} className="text-gray-900 font-medium leading-tight">
         {label}
         {props.isRequired ? (<sup>*</sup>) : null}
       </label>
-      <input {...inputProps} ref={ref} />
+      <div className="self-stretch bg-white rounded-lg shadow border border-gray-200">
+        <input {...inputProps} ref={ref} className="grow w-full rounded-lg px-3.5 py-2.5 shrink basis-0 text-gray-500 text-base font-normal leading-normal" />
+      </div>
       {props.description && (
-        <div {...descriptionProps}>
+        <div className="text-gray-500 text-sm font-normal leading-tight" {...descriptionProps}>
           {props.description}
         </div>
       )}
       {props.errorMessage && (
-        <div {...errorMessageProps}>
+        <div className="text-red-500 text-sm font-normal leading-tight" {...errorMessageProps}>
           {props.errorMessage}
         </div>
       )}
-    </div>
+    </div>    
   );
 };
 

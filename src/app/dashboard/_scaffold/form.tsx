@@ -1,5 +1,4 @@
 'use client';
-import type { SFormProps } from '../../../components/sForm';
 
 import dynamic from 'next/dynamic';
 import React from 'react';
